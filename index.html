@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel ="stylesheet" href="style.css">
+
+<div class="header">
+  <a href="#default" class="logo">Bloom House</a>
+  <img src="logo.png" alt="logo" width="50" height="50">
+
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+</div>
+
+</head>
+<body background="background.jpg">
+
+
+<h1>Registration Form</h1>
+<p>Fill up the form then click submit</p>
+
+<div class="container">
+ <form action="/action_page.php">
+    <label for="Last Name">Last Name</label>
+    <input type="text" id="Last Name" name="Last Name" required>
+
+    <label for="First Name">First Name</label>
+    <input type="text" id="First Name" name="First Name" required>
+
+    <label for="Middle Name">Middle Name</label>
+    <input type="text" id="Middle Name" name="Middle Name" required>
+
+    <label for="psw">Password</label>
+    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+
+    <label for="psw">Re-Type Password</label>
+    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+
+    <label for="Middle Name">Birthday(MM/DD/YYYY)</label>
+    <input type="text" id="Birthday" name="Birthday"  required>
+
+    <label for="Middle Name">Gender(Male/Female)</label>
+    <input type="text" id="Gender" name="gender"  required>
+
+    <label for="Middle Name">Registration Code(nine digit code)</label>
+    <input type="text" id="Reg" name="Reg" required>
+
+    <input type="submit" value="NEXT" >
+  </form>
+</div>
+
+				
+<script src ="script.js"></script>
+
+</body>
+</html>
